@@ -14,10 +14,8 @@ ActiveRecord::Schema.define(version: 20131102144109) do
 
   create_table "payments", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.datetime "date"
-    t.string   "status"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.index ["status", "date"], name: "index_payments_on_status_and_date", using: :btree
   end
 
 end
